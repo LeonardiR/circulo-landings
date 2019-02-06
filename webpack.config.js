@@ -8,9 +8,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production';
 const glob = require('glob');
 module.exports = {
     entry: {
-        main:'./src/main.js',
-        landing: './src/templates/landing/landing.js',
-        page: './src/templates/page/page.js'
+        main:'./src/main.js'
     } ,
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -67,7 +65,7 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(woff|woff2|ttf|eot)$/,
+                test: /\.(woff|woff2|ttf|eot|svg)$/,
                 use: [
                     {
                         loader: "file-loader",
@@ -126,21 +124,12 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            title: 'This is the landing',
+            title: 'Sorteo Circulo',
             filename: 'index.html',
             template: './src/templates/landing/t-landing.hbs',
-            chunks: ['main','landing'],
+            chunks: ['main'],
             minify: !isDevelopment && {
-                html5: true
-            },
-        }),
-        new HtmlWebpackPlugin({
-            title: 'This is a avergage Page',
-            filename: 'page/index.html',
-            template: './src/templates/page/t-page.hbs',
-            chunks: ['main','page'],
-            minify: !isDevelopment && {
-                html5: true
+                html5: false
             },
         })
     ]

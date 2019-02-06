@@ -1,18 +1,10 @@
 /*Main styles*/
 import './main.scss';
 /*Widgets*/
-import 'Widgets/side-drawer';
+import 'Widgets/readmore';
 /*Assets*/
-import 'Assets/fonts/MaisonNeue-Bold.ttf';
-import 'Assets/fonts/MaisonNeue-Bold.woff';
-import 'Assets/fonts/MaisonNeue-Bold.woff2';
-import 'Assets/fonts/MaisonNeue-BoldItalic.ttf';
-import 'Assets/fonts/MaisonNeue-BoldItalic.woff';
-import 'Assets/fonts/MaisonNeue-BoldItalic.woff2';
-import 'Assets/fonts/MaisonNeue-Book.ttf';
-import 'Assets/fonts/MaisonNeue-Book.woff';
-import 'Assets/fonts/MaisonNeue-Book.woff2';
-import 'Assets/fonts/MaisonNeue-BookItalic.ttf';
-import 'Assets/fonts/MaisonNeue-BookItalic.woff2';
-import 'Assets/fonts/MaisonNeue-BookItalic.woff2';
-import 'Assets/img/html.jpg';
+import 'Assets/fonts/Montserrat-Bold.ttf';
+import 'Assets/fonts/Montserrat-Bold.woff';
+import 'Assets/fonts/Montserrat-Bold.eot';
+import 'Assets/fonts/Montserrat-Bold.svg';
+import 'Assets/img/BannerPrincipal.jpg';

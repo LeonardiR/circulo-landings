@@ -1,0 +1,36 @@
+.e-readmore{
+  .e-readmore__text--sliced{
+    display: inline-block;
+    position: relative;
+    max-width: 91%;
+    max-height: 14px;
+    overflow: hidden;
+    vertical-align: middle;
+
+    /*&:after{
+      position: absolute;
+      display: block;
+      background-image: linear-gradient(to right, transparent, #f0f0f0);
+      width: 40px;
+      height: 20px;
+      content: '';
+      top: 0;
+      right:0;
+    }*/
+  }
+
+  .e-readmore__btn{
+    cursor: pointer;
+    color: $brand-color--pink-6;
+    text-decoration: none;
+    display: inline-block;
+  }
+  &.e-readmore--open{
+    .e-readmore__text--sliced{
+      max-height: none;
+    }
+    .e-readmore__btn{
+      display: block;
+    }
+  }
+}

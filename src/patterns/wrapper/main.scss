@@ -1,6 +1,9 @@
 .p-wrapper{
   position: relative;
-  max-width: 1200px;
+  max-width: 845px;
   padding: 0 5px;
   margin: 0 auto;
+  &.p-wrapper--tiny{
+    max-width: 480px;
+  }
 }

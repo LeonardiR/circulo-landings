@@ -1,14 +1,16 @@
 @import "fonts";
 body{
-  font-family: MaisonNeue-Book;
+  font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
+  font-size: 10px;
   margin: 0;
   padding: 0;
   height: auto;
-  color: $brand-color--dark-grey;
+  color: $brand-color--pink-5;
 }
 img{
   width: 100%;
 }
 a{
-  color: $brand-color--dark-grey;
+  color: $brand-color--pink-6;
+  text-decoration: none;
 }

@@ -1,7 +1,24 @@
 .p-title{
   margin-top: 0;
+  margin-bottom: 40px;
 
   &.p-title--h1 {
-    margin-bottom: 25px;
+    font-size: 40px;
+    color: $brand-color--pink-1;
+
+    span{
+      color: $brand-color--pink-2;
+    }
+  }
+  &.p-title--h2{
+    font-size: 25px;
+    color: $brand-color--pink-4;
+
+    &.p-title--h2-secondary{
+      color: $brand-color--pink-5;
+      span{
+        color: $brand-color--pink-6;
+      }
+    }
   }
 }
