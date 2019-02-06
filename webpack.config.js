@@ -12,7 +12,7 @@ module.exports = {
     } ,
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].js'
+        filename: '[name].js'
     },
     resolve: {
         alias: {
@@ -84,7 +84,7 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'assets',
+                            outputPath: 'assets/img',
                             useRelativePath: true
                         }
                     },
