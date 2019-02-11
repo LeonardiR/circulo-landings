@@ -53,8 +53,7 @@ module.exports = {
                             },
                             sourceMap: isDevelopment,
                             plugins: () => [
-                                autoprefixer({ grid: true }),
-                                cssnano({ preset: 'default' })
+                                autoprefixer({ grid: true })
                             ]
                         },
                     },
@@ -73,7 +72,7 @@ module.exports = {
                         loader: "file-loader",
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'assets',
+                            outputPath: 'assets/fonts',
                             useRelativePath: true
                         }
                     }
@@ -131,11 +130,7 @@ module.exports = {
             template: './src/templates/landing/t-landing.hbs',
             chunks: ['main'],
             minify: !isDevelopment && {
-                html5: true,
-                collapseWhitespace: true,
-                caseSensitive: true,
-                removeComments: true,
-                removeEmptyElements: true
+                html5: false
             },
         })
     ]

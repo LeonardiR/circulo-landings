@@ -16,8 +16,13 @@
 
     &.p-title--h2-secondary{
       color: $brand-color--pink-5;
+      margin-bottom: 0;
       span{
         color: $brand-color--pink-6;
+      }
+      a{
+        color: $brand-color--pink-5;
+        text-decoration: underline;
       }
     }
   }

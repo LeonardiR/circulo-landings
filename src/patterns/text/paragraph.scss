@@ -1,5 +1,8 @@
 .p-paragraph{
   font-size: 12px;
+  label{
+    color: $brand-color--pink-5;
+  }
   &.p-paragraph--huge{
     font-size: 145px;
     color: $brand-color--pink-3;
