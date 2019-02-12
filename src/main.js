@@ -1,8 +1,16 @@
-/*Main styles*/
+/*VENDORS*/
+/*Styles*/
+import 'simplebar/dist/simplebar.css';
+/*Js*/
+import 'simplebar';
+
+/*MAINSTYLES*/
 import './main.scss';
-/*Widgets*/
+
+/*WIDGETS*/
 import 'Widgets/readmore';
-/*Assets*/
+
+/*ASSETS*/
 import 'Assets/fonts/Montserrat-Bold.ttf';
 import 'Assets/fonts/Montserrat-Bold.woff';
 import 'Assets/fonts/Montserrat-Bold.eot';

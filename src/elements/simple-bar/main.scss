@@ -1,0 +1,9 @@
+.simplebar-wrapper{
+  height: 45px;
+}
+.simplebar-track {
+  right: -7px;
+  .simplebar-scrollbar:before {
+    opacity: 0.5;
+  }
+}
