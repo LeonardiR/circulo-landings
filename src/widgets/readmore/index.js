@@ -7,13 +7,20 @@
     }
 
     ReadMore.prototype.toggleState = function () {
-        var readmoreOpenClass = this.readmoreOpenClass
+        var readmoreOpenClass = this.readmoreOpenClass;
         for (var i = 0; this.readmoreBtn.length > i; i++) {
             this.readmoreBtn[i].addEventListener('click', function (e) {
                 e.stopPropagation();
                 var currentReadmoreId = e.currentTarget.getAttribute('data-readmore'),
                     currentReadmore = document.getElementById(currentReadmoreId);
                 currentReadmore.classList.toggle(readmoreOpenClass);
+                if(currentReadmore.classList.contains(readmoreOpenClass)){
+                    e.currentTarget.innerHTML = "ver menos";
+                    currentReadmore.children[0].children[1].appendChild(e.currentTarget);
+                }else{
+                    e.currentTarget.innerHTML = "ver mas";
+                    currentReadmore.appendChild(e.currentTarget);
+                }
             });
         }
     };

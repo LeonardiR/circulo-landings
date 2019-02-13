@@ -2,21 +2,22 @@
   .e-readmore__text--sliced{
     display: inline-block;
     position: relative;
-    max-width: 91%;
+    width: 247px;
     max-height: 14px;
     overflow: hidden;
     vertical-align: middle;
-
-    /*&:after{
-      position: absolute;
-      display: block;
-      background-image: linear-gradient(to right, transparent, #f0f0f0);
-      width: 40px;
-      height: 20px;
-      content: '';
-      top: 0;
-      right:0;
-    }*/
+    @include mediaQueryMin(400px){
+      width: 332px;
+    }
+    @include mediaQueryMin($mq_breakpoint--sm){
+      width: 480px;
+    }
+   &.e-readmore__text--sliced--md {
+     width: 280px;
+     @include mediaQueryMin($mq_breakpoint--sm){
+       width: 402px;
+     }
+   }
   }
 
   .e-readmore__btn{
@@ -28,9 +29,10 @@
   &.e-readmore--open{
     .e-readmore__text--sliced{
       max-height: none;
+      width: 100%;
     }
     .e-readmore__btn{
-      display: block;
+
     }
   }
 }
